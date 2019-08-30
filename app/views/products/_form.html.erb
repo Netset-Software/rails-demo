@@ -1,0 +1,34 @@
+<section class="page-login height100">  
+  <aside class="col-sm-12">
+    <%=  form_with(model: product, local: true, html: {class: 'welcome'}) do |form| %>
+      <%= content_tag(:div, flash[:error], :id => "flash_error") if flash[:error] %>
+      <%= content_tag(:div, flash[:notice], :id => "flash_notice") if flash[:notice] %>
+      <%= content_tag(:div, flash[:alert], :id => "flash_alert",:class=>"alert-danger") if flash[:alert] %>
+      <div class="welcome_top">
+        <h2>Create Your Product</h2>
+     </div> 
+      <%= form.hidden_field :user_id , value: current_user.id%>
+      <div class="forn_field">
+        <div class="form-group form_g">
+          <%= form.label :prd_name, class: "cus_label" %>
+          <%= form.text_field :prd_name , class: "form-control"%>
+        </div>
+        <div class="form-group form_g">
+          <%= form.label :description, class: "cus_label" %>
+          <%= form.text_area :description , class: "form-control"%>
+        </div>
+        <div class="form-group form_g">
+          <%= form.label :image, class: "cus_label" %>
+          <%= form.file_field(:image, accept: 'image/png,image/gif,image/jpeg', class: 'form-control')%>
+        </div>
+        <div class="form-group form_g">
+          <%= form.label :is_private, class: "cus_label" %>
+          <%= form.check_box :is_private%>
+        </div>
+      </div> 
+      <div class="sign_bt">
+        <%= form.submit "Submit", :class => 'btn2'%>
+      </div>
+    <% end %>
+  </aside>
+</section>

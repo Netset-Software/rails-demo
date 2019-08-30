@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>development.log - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+  var index_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/darkfish.js"></script>
+
+<link href="../css/fonts.css" rel="stylesheet">
+<link href="../css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../README_md.html">README</a>
+  
+    <li><a href="../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../app/assets/javascripts/home_coffee.html">home.coffee</a>
+  
+    <li><a href="../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../app/assets/stylesheets/home_scss.html">home.scss</a>
+  
+    <li><a href="../config_ru.html">config.ru</a>
+  
+    <li><a href="../config/credentials_yml_enc.html">credentials.yml.enc</a>
+  
+    <li><a href="../config/master_key.html">master.key</a>
+  
+    <li><a href="../log/development_log.html">development.log</a>
+  
+    <li><a href="../package_json.html">package.json</a>
+  
+    <li><a href="../public/404_html.html">404.html</a>
+  
+    <li><a href="../public/422_html.html">422.html</a>
+  
+    <li><a href="../public/500_html.html">500.html</a>
+  
+    <li><a href="../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../public/robots_txt.html">robots</a>
+  
+    <li><a href="../tmp/development_secret_txt.html">development_secret</a>
+  
+    <li><a href="../tmp/restart_txt.html">restart</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page log/development.log">
+
+<pre>[1m[35m (630.0ms)[0m  [1m[35mCREATE DATABASE &quot;hubhuman_development&quot; ENCODING = &#39;utf8&#39;[0m
+↳ /home/netset/.rvm/gems/ruby-2.6.1/bin/rake:23
+[1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE &quot;hubhuman_test&quot; ENCODING = &#39;utf8&#39;[0m
+↳ /home/netset/.rvm/gems/ruby-2.6.1/bin/rake:23
+[1m[35m (253.0ms)[0m  [1m[35mCREATE DATABASE &quot;demo_app_dev&quot; ENCODING = &#39;utf8&#39;[0m
+↳ /home/netset/.rvm/gems/ruby-2.6.1/bin/rake:23
+[1m[35m (256.5ms)[0m  [1m[35mCREATE DATABASE &quot;demo_app_test&quot; ENCODING = &#39;utf8&#39;[0m
+↳ /home/netset/.rvm/gems/ruby-2.6.1/bin/rake:23
+[1m[35m (21.4ms)[0m  [1m[35mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; character varying NOT NULL PRIMARY KEY)[0m
+↳ bin/rails:9
+[1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE &quot;ar_internal_metadata&quot; (&quot;key&quot; character varying NOT NULL PRIMARY KEY, &quot;value&quot; character varying, &quot;created_at&quot; timestamp NOT NULL, &quot;updated_at&quot; timestamp NOT NULL)[0m
+↳ bin/rails:9
+[1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8566834088365693245)[0m
+↳ bin/rails:9
+[1m[35m (0.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+↳ bin/rails:9</pre>
+
+<p>Migrating to <a href="../DeviseCreateUsers.html"><code>DeviseCreateUsers</code></a> (20190821092521)</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+↳ bin/rails:9
+[1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE &quot;users&quot; (&quot;id&quot; bigserial primary key, &quot;email&quot; character varying DEFAULT &#39;&#39; NOT NULL, &quot;encrypted_password&quot; character varying DEFAULT &#39;&#39; NOT NULL, &quot;reset_password_token&quot; character varying, &quot;reset_password_sent_at&quot; timestamp, &quot;remember_created_at&quot; timestamp, &quot;created_at&quot; timestamp NOT NULL, &quot;updated_at&quot; timestamp NOT NULL)[0m
+↳ db/migrate/20190821092521_devise_create_users.rb:5
+[1m[35m (5.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  &quot;index_users_on_email&quot; ON &quot;users&quot;  (&quot;email&quot;)[0m
+↳ db/migrate/20190821092521_devise_create_users.rb:39
+[1m[35m (6.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot;  (&quot;reset_password_token&quot;)[0m
+↳ db/migrate/20190821092521_devise_create_users.rb:40
+[1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES ($1) RETURNING &quot;version&quot;[0m  [[&quot;version&quot;, &quot;20190821092521&quot;]]
+↳ bin/rails:9
+[1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+↳ bin/rails:9
+[1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  &quot;ar_internal_metadata&quot;.* FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = $1 LIMIT $2[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;LIMIT&quot;, 1]]
+↳ bin/rails:9
+[1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+↳ bin/rails:9
+[1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO &quot;ar_internal_metadata&quot; (&quot;key&quot;, &quot;value&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ($1, $2, $3, $4) RETURNING &quot;key&quot;[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;value&quot;, &quot;development&quot;], [&quot;created_at&quot;, &quot;2019-08-21 09:25:27.268891&quot;], [&quot;updated_at&quot;, &quot;2019-08-21 09:25:27.268891&quot;]]
+↳ bin/rails:9
+[1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+↳ bin/rails:9
+[1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(8566834088365693245)[0m
+↳ bin/rails:9
+[1m[35m (0.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+↳ bin/rails:9</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2019-08-21 14:58:05 +0530</p>
+
+<pre>[1m[35m (0.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+↳ /home/netset/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98</pre>
+
+<p>Processing by HomeController#index as HTML Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2019-08-21 14:58:05 +0530 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/shared/_links.html.erb (0.7ms)
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/sessions/new.html.erb within layouts/application (9.5ms)</pre>
+
+<p>Completed 200 OK in 387ms (Views: 379.6ms | ActiveRecord: 2.1ms)</p>
+
+<p>Started POST “/users/sign_in” for 127.0.0.1 at 2019-08-21 14:58:12 +0530 Processing by Devise::SessionsController#create as HTML</p>
+
+<pre>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;authenticity_token&quot;=&gt;&quot;qbvwHWUuT+zcAMS5HLvOKsYr1YfdL9sKnXIlA0K7vrpiqf8LyEXPzxrdwmrlkaozSm8/U5gxc2dmc/1dG1yj7g==&quot;, &quot;user&quot;=&gt;{&quot;email&quot;=&gt;&quot;admin@telora.com.au&quot;, &quot;password&quot;=&gt;&quot;[FILTERED]&quot;, &quot;remember_me&quot;=&gt;&quot;0&quot;}, &quot;commit&quot;=&gt;&quot;Log in&quot;}
+[1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = $1 ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT $2[0m  [[&quot;email&quot;, &quot;admin@telora.com.au&quot;], [&quot;LIMIT&quot;, 1]]
+↳ /home/netset/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98</pre>
+
+<p>Completed 401 Unauthorized in 3ms (ActiveRecord: 0.6ms)</p>
+
+<p>Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;authenticity_token&quot;=&gt;&quot;qbvwHWUuT+zcAMS5HLvOKsYr1YfdL9sKnXIlA0K7vrpiqf8LyEXPzxrdwmrlkaozSm8/U5gxc2dmc/1dG1yj7g==&quot;, &quot;user&quot;=&gt;{&quot;email&quot;=&gt;&quot;admin@telora.com.au&quot;, &quot;password&quot;=&gt;&quot;[FILTERED]&quot;, &quot;remember_me&quot;=&gt;&quot;0&quot;}, &quot;commit&quot;=&gt;&quot;Log in&quot;}
+Rendering /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/sessions/new.html.erb within layouts/application
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/shared/_links.html.erb (0.5ms)
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/sessions/new.html.erb within layouts/application (2.0ms)</pre>
+
+<p>Completed 200 OK in 131ms (Views: 9.0ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2019-08-21 15:01:04 +0530 Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/shared/_error_messages.html.erb (0.3ms)
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/shared/_links.html.erb (0.6ms)
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/registrations/new.html.erb within layouts/application (3.3ms)</pre>
+
+<p>Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started POST “/users” for 127.0.0.1 at 2019-08-21 15:01:07 +0530 Processing by Devise::RegistrationsController#create as HTML</p>
+
+<pre>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;authenticity_token&quot;=&gt;&quot;z6zKHpdiqD0D2djtzvQAwJFkABjZ/54aFuvlHPMrWmW/XFkcL98M8F7u19A4jBwmDB/cgAVtYJjrIJrMccFlTw==&quot;, &quot;user&quot;=&gt;{&quot;email&quot;=&gt;&quot;&quot;, &quot;password&quot;=&gt;&quot;[FILTERED]&quot;, &quot;password_confirmation&quot;=&gt;&quot;[FILTERED]&quot;}, &quot;commit&quot;=&gt;&quot;Sign up&quot;}
+[1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+↳ /home/netset/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+↳ /home/netset/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Rendering /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/registrations/new.html.erb within layouts/application
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/shared/_error_messages.html.erb (0.6ms)
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/shared/_links.html.erb (0.4ms)
+Rendered /home/netset/.rvm/gems/ruby-2.6.1/gems/devise-4.7.0/app/views/devise/registrations/new.html.erb within layouts/application (3.1ms)</pre>
+
+<p>Completed 200 OK in 111ms (Views: 10.5ms | ActiveRecord: 0.2ms)</p>
+
+<p>Started GET “/” for 192.168.2.91 at 2019-08-21 17:21:27 +0530 Cannot render console from 192.168.2.91! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255</p>
+
+<pre>[1m[35m (0.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m
+↳ /home/netset/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98</pre>
+
+<p>Processing by HomeController#index as HTML Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 192.168.2.91 at 2019-08-21 17:21:27 +0530 Cannot render console from 192.168.2.91! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering devise/sessions/new.html.erb within layouts/application
+Rendered devise/shared/_links.html.erb (6.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.2ms)</pre>
+
+<p>Completed 200 OK in 1144ms (Views: 1137.2ms | ActiveRecord: 2.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 192.168.2.91 at 2019-08-21 17:25:21 +0530 Cannot render console from 192.168.2.91! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255 Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendering devise/sessions/new.html.erb within layouts/application
+Rendered devise/shared/_links.html.erb (1.1ms)
+Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)</pre>
+
+<p>Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)</p>
+
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

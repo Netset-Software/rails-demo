@@ -1,0 +1,46 @@
+<header class="header">
+   <div class="container-fluid">
+      <div class="row">
+         <aside class="col-sm-1 col-xs-9 log_haeder haede_sctn">
+         </aside>
+         <aside class="col-sm-11 col-xs-3">
+            <nav class="navbar navbar-default custom_navigation new_nav profile">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>          
+               </div>
+               <div aria-expanded="false" id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav searc_he pull-left">
+                     <% if params[:controller] == "home" %>
+                        <li class="active">
+                     <%else%>
+                        <li>
+                     <%end%>
+                           <%= link_to "Public Products" %>
+                        </li> 
+                     <% if request.fullpath.split(/[?^\/]/).include?("products") && params[:action] == "index"  %>
+                        <li class="active">
+                     <% else %>
+                        <li>
+                     <% end %>
+                           <%= link_to "My Products", products_path %>
+                     </li>
+                     <% if request.fullpath.split(/[?^\/]/).include?("new") && params[:action] == "new"  %>
+                        <li class="active">
+                     <% else %>
+                        <li>
+                     <% end %>
+                           <%= link_to "Create Product", new_product_path %>
+                     </li>               
+                  </ul>
+                  <%= link_to :logout, destroy_user_session_path, :method => :delete, class: 'sign_out' %>
+               </div>
+            </nav>
+         </aside>
+      </div>
+   </div>
+</header>    

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prd_name: MyString
+  user: one
+  is_private: false
+
+two:
+  prd_name: MyString
+  user: two
+  is_private: false
